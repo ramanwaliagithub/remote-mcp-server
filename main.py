@@ -9,7 +9,7 @@ CATEGORIES_PATH = os.path.join(os.path.dirname(__file__), "categories.json")
 
 print(f"Database path: {DB_PATH}")
 
-mcp = FastMCP("ExpenseTracker")
+mcp = FastMCP("ExpenseTracker", auth=None)
 
 def init_db():  # Keep as sync for initialization
     try:
